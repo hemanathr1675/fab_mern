@@ -4,12 +4,14 @@ body {
 
 .boxinput {
     width: 1050px;
-    height: 70px;
-    border-radius: 50px;
-    background-color: #252833;
-    border: none;
-    color: white;
+    height: 50px;
+    background-color: transparent;
+    color: rgb(248, 245, 245);
     font-size: 20px;
+    border: nones;
+    border-bottom: transparent;
+    border-right: transparent;
+    outline: none;
     
 }
 
@@ -18,10 +20,26 @@ body {
 }
 
 .marginseven {
-    margin-top: 30px;
+    margin-top: 10px;
 
 }
 
+.h-75
+{
+    border: none;
+}
+
+
+
+.col{
+    position: relative;
+    min-width: 150px;
+    width: 150px;
+    height: 300px;
+    overflow: hidden;
+    margin-left: 2px;
+   
+}
 
 .sidebar {
     position: fixed;

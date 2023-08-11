@@ -12,14 +12,103 @@ body {
     height: 100vh;
     width: 100%;
     background-image: url("images/hero-bg.jpg");
+    background-color: black;
     background-position: center;
     background-size: cover;
 }
 
 .top{
-    
-    margin-left: 150px;
+    margin-left: 170px;
 }
+
+
+.owl {
+    position: relative;
+    min-width: 150px;
+    width: 50px;
+    height: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-left: 10px;
+    transition: .5s;
+    background: #000;
+ }
+ .owl:hover {
+    transform: scale(1.1);
+ }
+ .owl:hover .card-body {
+    opacity: 1;
+ }
+
+ .owl .img {
+    width: 180px;
+    height: 180px;
+    object-fit: contain;
+ }
+
+ .card-body {
+    opacity: 0;
+    width: 150px;
+    height: 225px;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    z-index: 2;
+    background: linear-gradient(to bottom, rgba(4, 8, 15, 0), #192133 90%);
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 5px;
+ }
+
+ .name {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-top: 60%;
+ }
+
+ .des {
+    color: #fff;
+    opacity: 0.8;
+    margin: 5px 0;
+    font-weight: 500;
+    font-size: 12px;
+ }
+
+ .watchlist-btn {
+    position: relative;
+    width: 100%;
+    text-transform: capitalize;
+    background: none;
+    border: none;
+    font-weight: 500;
+    text-align: right;
+    color: white;
+    margin: 8px 0  ;
+    cursor: pointer;
+    padding: 10px 5px;
+    border-radius: 5px;
+    top: 11px;
+ }
+
+ .watchlist-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -5px;
+    height: 35px;
+    width: 35px;
+    background-image: url(images/add.png);
+    background-size: cover;
+    transform: scale(0.4);
+ }
+
+ .watchlist-btn:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0.1);
+    margin-bottom: 5px;
+ }
 
 
 .video-card-container {
@@ -58,19 +147,19 @@ body {
  }
 
 
+
  .sidebar {
     position: fixed;
     top: 0;
     left: 0;
-    width: 110px;
+    width: 0px;
     height: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(17px);
     --webkit-backdrop-filter: blur(17px);
-    border-right: 1px solid rgba(255, 255, 255, 0.7);
+   
     transition: width 0.3s ease;
 }
 
@@ -100,7 +189,7 @@ body {
 
 .links li:hover {
     cursor: pointer;
-    background: #fff;
+    
 }
 
 .sidebar:hover .links h4 {
@@ -128,13 +217,12 @@ body {
     display: block;
 }
 
-
 .footer
 {
     
     width: 100%;
     min-height: 350px;
-    background-color: #0F1014;
+    background-color:black;
 }
 .footer-style
 {
